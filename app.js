@@ -25,3 +25,11 @@ for (link of menuLinks) {
     aEl.innerText = link.text
     topMenuEl.appendChild(aEl)
 }
+
+// Task 4
+let subMenuEl = document.querySelector('#sub-menu');
+subMenuEl.style.height = '100%';
+subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)';
+subMenuEl.classList.add('flex-around');
+subMenuEl.style.position = 'absolute';
+subMenuEl.style.top = '0';
