@@ -108,5 +108,11 @@ subMenuEl.addEventListener('click', function(event){
   } else {
     console.log(event.target.innerText)
   }
+  showingSubMenu = false;
+  subMenuEl.style.top = '0';
+  for(link of topMenuLinks){
+    link.classList.remove('active')
+  }
+  mainEl.innerHTML = '<h1>' + event.target.innerText + '</h1>'
 
 })
